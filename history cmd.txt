@@ -1,0 +1,52 @@
+  736  git clone https://github.com/SoCoolCot/LR6
+  737  git config user.name "4116 Романцов А.А."
+  738  cd ./LR6
+  739  git config user.name "4116 Романцов А.А."
+  740  git config user.email "iSashok777@yandex.com"
+  741  git log --all
+  742  git log --graph
+  743  git log --all --graph
+  744  touch testing.txt
+  745  git add testing.txt
+  746  git commit -m "test commit"
+  747  git push https://github.com/SoCoolCot/LR6
+  748  git push https://github.com/SoCoolCot/LR6
+  749  git checkout branch1
+  750  git checkout master
+  751  git branch -a
+  752  git merge branch1
+  753  git add mergefile.txt
+  754  git commit -m "merge conflict resolve"
+  755  git branch -a
+  756  git branch -d branch1
+  757  git branch -a
+  758  git push -d origin/branch1
+  759  git push origin -d branch1
+  760  git branch -a
+  761  touch deletefile.txt
+  762  git add deletefile.txt
+  763  git commit -m "for delete"
+  764  git log --graph
+  765  git reset --hard HEAD~
+  766  git log --graph
+  767  git branch report
+  768  git checkout report
+  769  touch "terminal log.txt"
+  770  touch "history cmd.txt"
+  771  git add "terminal log.txt"
+  772  git add "history cmd.txt"
+  773  git commit -m "file created"
+  774  git push https://github.com/SoCoolCot/LR6
+  775  git checkout master
+  776  git push https://github.com/SoCoolCot/LR6
+  777  git add README.md
+  778  git commit -m "edit readme"
+  779  git push https://github.com/SoCoolCot/LR6
+  780  git pull
+  781  git checkout report
+  782  git add ./images
+  783  git add README.md
+  784  git commit -m "~~alpha~~ omega"
+  785  git push https://github.com/SoCoolCot/LR6
+  786  git log --pretty=format:"%h - %an, %ar : %s"
+  787  git log --pretty=format:"%h - %an, %ar : %s" --graph

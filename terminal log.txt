@@ -1,0 +1,340 @@
+Last login: Fri Nov  4 13:56:33 on ttys000
+alex@Aleksandrs-MacBook-Pro git 6 % git clone https://github.com/SoCoolCot/LR6
+Cloning into 'LR6'...
+remote: Enumerating objects: 12, done.
+remote: Total 12 (delta 0), reused 0 (delta 0), pack-reused 12
+Receiving objects: 100% (12/12), done.
+alex@Aleksandrs-MacBook-Pro git 6 % git config user.name "4116 Романцов А.А."
+fatal: not in a git directory
+alex@Aleksandrs-MacBook-Pro git 6 % cd ./LR6 
+alex@Aleksandrs-MacBook-Pro LR6 % git config user.name "4116 Романцов А.А."
+alex@Aleksandrs-MacBook-Pro LR6 % git config user.email "iSashok777@yandex.com"
+alex@Aleksandrs-MacBook-Pro LR6 % git log --all
+commit 921f53b8d0cebf542c791cf31f04e9b792f385a4 (HEAD -> master, origin/master, origin/HEAD)
+Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+Date:   Sat Nov 21 20:09:49 2020 +0300
+
+    Обновление информации
+
+commit 0f9f50db68a6983b47398017545532cd0f992846 (origin/branch1)
+Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+Date:   Sat Nov 21 20:08:33 2020 +0300
+
+    Заполнил файл
+
+commit c08a654a63cfc3a7146b2b7015884d9020f5cbf5
+Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+Date:   Sat Nov 21 20:02:16 2020 +0300
+
+    Файл создан пустым
+
+commit 3c6e9131bb47ed6009c28226afb0535c7f6d5964
+Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+Date:   Sat Nov 21 19:58:20 2020 +0300
+
+    Initial commit
+alex@Aleksandrs-MacBook-Pro LR6 % git log --graph
+* commit 921f53b8d0cebf542c791cf31f04e9b792f385a4 (HEAD -> master, origin/master, origin/HEAD)
+| Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+| Date:   Sat Nov 21 20:09:49 2020 +0300
+| 
+|     Обновление информации
+| 
+* commit c08a654a63cfc3a7146b2b7015884d9020f5cbf5
+| Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+| Date:   Sat Nov 21 20:02:16 2020 +0300
+| 
+|     Файл создан пустым
+| 
+* commit 3c6e9131bb47ed6009c28226afb0535c7f6d5964
+  Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+  Date:   Sat Nov 21 19:58:20 2020 +0300
+  
+      Initial commit
+alex@Aleksandrs-MacBook-Pro LR6 % git log --all --graph
+* commit 921f53b8d0cebf542c791cf31f04e9b792f385a4 (HEAD -> master, origin/master, origin/HEAD)
+| Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+| Date:   Sat Nov 21 20:09:49 2020 +0300
+| 
+|     Обновление информации
+|   
+| * commit 0f9f50db68a6983b47398017545532cd0f992846 (origin/branch1)
+|/  Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+|   Date:   Sat Nov 21 20:08:33 2020 +0300
+|   
+|       Заполнил файл
+| 
+* commit c08a654a63cfc3a7146b2b7015884d9020f5cbf5
+| Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+| Date:   Sat Nov 21 20:02:16 2020 +0300
+| 
+|     Файл создан пустым
+| 
+* commit 3c6e9131bb47ed6009c28226afb0535c7f6d5964
+  Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+  Date:   Sat Nov 21 19:58:20 2020 +0300
+  
+      Initial commit
+alex@Aleksandrs-MacBook-Pro LR6 % touch testing.txt
+alex@Aleksandrs-MacBook-Pro LR6 % git add testing.txt 
+alex@Aleksandrs-MacBook-Pro LR6 % git commit -m "test commit"
+[master 0221506] test commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 testing.txt
+alex@Aleksandrs-MacBook-Pro LR6 % git push https://github.com/SoCoolCot/LR6            
+Username for 'https://github.com': SoCoolCot
+Password for 'https://SoCoolCot@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/SoCoolCot/LR6/'
+alex@Aleksandrs-MacBook-Pro LR6 % git push https://github.com/SoCoolCot/LR6
+Username for 'https://github.com': SoCoolCot
+Password for 'https://SoCoolCot@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 342 bytes | 342.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SoCoolCot/LR6
+   921f53b..0221506  master -> master
+alex@Aleksandrs-MacBook-Pro LR6 % git checkout branch1
+Branch 'branch1' set up to track remote branch 'branch1' from 'origin'.
+Switched to a new branch 'branch1'
+alex@Aleksandrs-MacBook-Pro LR6 % git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+alex@Aleksandrs-MacBook-Pro LR6 % git branch -a  
+  branch1
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/branch1
+  remotes/origin/master
+alex@Aleksandrs-MacBook-Pro LR6 % git merge branch1
+Auto-merging mergefile.txt
+CONFLICT (content): Merge conflict in mergefile.txt
+Automatic merge failed; fix conflicts and then commit the result.
+alex@Aleksandrs-MacBook-Pro LR6 % git add mergefile.txt 
+alex@Aleksandrs-MacBook-Pro LR6 % git commit -m "merge conflict resolve"
+[master c781a3f] merge conflict resolve
+alex@Aleksandrs-MacBook-Pro LR6 % git branch -a
+  branch1
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/branch1
+  remotes/origin/master
+alex@Aleksandrs-MacBook-Pro LR6 % git branch -d branch1
+Deleted branch branch1 (was 0f9f50d).
+alex@Aleksandrs-MacBook-Pro LR6 % git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/branch1
+  remotes/origin/master
+alex@Aleksandrs-MacBook-Pro LR6 % git push -d origin/branch1
+fatal: --delete doesn't make sense without any refs
+alex@Aleksandrs-MacBook-Pro LR6 % git push origin -d branch1
+To https://github.com/SoCoolCot/LR6
+ - [deleted]         branch1
+alex@Aleksandrs-MacBook-Pro LR6 % git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+alex@Aleksandrs-MacBook-Pro LR6 % touch deletefile.txt
+alex@Aleksandrs-MacBook-Pro LR6 % git add deletefile.txt 
+alex@Aleksandrs-MacBook-Pro LR6 % git commit -m "for delete"
+[master 2db3565] for delete
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 deletefile.txt
+alex@Aleksandrs-MacBook-Pro LR6 % git log --graph
+* commit 2db35653e29a33bdf59d07f2cd17ea11fca2cfe8 (HEAD -> master)
+| Author: 4116 Романцов А.А <iSashok777@yandex.com>
+| Date:   Sat Nov 5 21:32:33 2022 +0300
+| 
+|     for delete
+|   
+*   commit c781a3f9fef541123ad9ac37e926e4670b921e9d
+|\  Merge: 0221506 0f9f50d
+| | Author: 4116 Романцов А.А <iSashok777@yandex.com>
+| | Date:   Sat Nov 5 21:27:08 2022 +0300
+| | 
+| |     merge conflict resolve
+| | 
+| * commit 0f9f50db68a6983b47398017545532cd0f992846
+| | Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+| | Date:   Sat Nov 21 20:08:33 2020 +0300
+| | 
+| |     Заполнил файл
+| | 
+* | commit 022150620a87f7883746941b185abb8b6b6c49fb
+| | Author: 4116 Романцов А.А <iSashok777@yandex.com>
+| | Date:   Sat Nov 5 21:08:18 2022 +0300
+| | 
+| |     test commit
+| | 
+* | commit 921f53b8d0cebf542c791cf31f04e9b792f385a4 (origin/master, origin/HEAD)
+|/  Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+|   Date:   Sat Nov 21 20:09:49 2020 +0300
+|   
+|       Обновление информации
+| 
+* commit c08a654a63cfc3a7146b2b7015884d9020f5cbf5
+| Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+| Date:   Sat Nov 21 20:02:16 2020 +0300
+| 
+|     Файл создан пустым
+| 
+* commit 3c6e9131bb47ed6009c28226afb0535c7f6d5964
+  Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+  Date:   Sat Nov 21 19:58:20 2020 +0300
+  
+      Initial commit
+
+zsh: suspended  git log --graph
+alex@Aleksandrs-MacBook-Pro LR6 % git reset --hard HEAD~
+HEAD is now at c781a3f merge conflict resolve
+alex@Aleksandrs-MacBook-Pro LR6 % git log --graph
+*   commit c781a3f9fef541123ad9ac37e926e4670b921e9d (HEAD -> master)
+|\  Merge: 0221506 0f9f50d
+| | Author: 4116 Романцов А.А <iSashok777@yandex.com>
+| | Date:   Sat Nov 5 21:27:08 2022 +0300
+| | 
+| |     merge conflict resolve
+| | 
+| * commit 0f9f50db68a6983b47398017545532cd0f992846
+| | Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+| | Date:   Sat Nov 21 20:08:33 2020 +0300
+| | 
+| |     Заполнил файл
+| | 
+* | commit 022150620a87f7883746941b185abb8b6b6c49fb
+| | Author: 4116 Романцов А.А <iSashok777@yandex.com>
+| | Date:   Sat Nov 5 21:08:18 2022 +0300
+| | 
+| |     test commit
+| | 
+* | commit 921f53b8d0cebf542c791cf31f04e9b792f385a4 (origin/master, origin/HEAD)
+|/  Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+|   Date:   Sat Nov 21 20:09:49 2020 +0300
+|   
+|       Обновление информации
+| 
+* commit c08a654a63cfc3a7146b2b7015884d9020f5cbf5
+| Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+| Date:   Sat Nov 21 20:02:16 2020 +0300
+| 
+|     Файл создан пустым
+| 
+* commit 3c6e9131bb47ed6009c28226afb0535c7f6d5964
+  Author: Kurtyanik <45309985+Kurtyanik@users.noreply.github.com>
+  Date:   Sat Nov 21 19:58:20 2020 +0300
+  
+      Initial commit
+alex@Aleksandrs-MacBook-Pro LR6 % 
+alex@Aleksandrs-MacBook-Pro LR6 % git branch report
+alex@Aleksandrs-MacBook-Pro LR6 % git checkout report
+Switched to branch 'report'
+alex@Aleksandrs-MacBook-Pro LR6 % touch "terminal log.txt"
+alex@Aleksandrs-MacBook-Pro LR6 % touch "history cmd.txt"
+alex@Aleksandrs-MacBook-Pro LR6 % git add "terminal log.txt" 
+alex@Aleksandrs-MacBook-Pro LR6 % git add "history cmd.txt" 
+alex@Aleksandrs-MacBook-Pro LR6 % git commit -m "file created"
+[report 52621d3] file created
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 history cmd.txt
+ create mode 100644 terminal log.txt
+alex@Aleksandrs-MacBook-Pro LR6 % git push https://github.com/SoCoolCot/LR6        
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 742 bytes | 742.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote: 
+remote: Create a pull request for 'report' on GitHub by visiting:
+remote:      https://github.com/SoCoolCot/LR6/pull/new/report
+remote: 
+To https://github.com/SoCoolCot/LR6
+ * [new branch]      report -> report
+alex@Aleksandrs-MacBook-Pro LR6 % git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+alex@Aleksandrs-MacBook-Pro LR6 % git push https://github.com/SoCoolCot/LR6
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SoCoolCot/LR6
+   0221506..c781a3f  master -> master
+alex@Aleksandrs-MacBook-Pro LR6 % git add README.md 
+alex@Aleksandrs-MacBook-Pro LR6 % git commit -m "edit readme"
+[master 43ba5ec] edit readme
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+alex@Aleksandrs-MacBook-Pro LR6 % git push https://github.com/SoCoolCot/LR6
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 413 bytes | 413.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SoCoolCot/LR6
+   c781a3f..43ba5ec  master -> master
+alex@Aleksandrs-MacBook-Pro LR6 % git pull 
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 1 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 27.20 KiB | 366.00 KiB/s, done.
+From https://github.com/SoCoolCot/LR6
+   c781a3f..f3b0080  master     -> origin/master
+Updating 43ba5ec..f3b0080
+Fast-forward
+ mem.png | Bin 0 -> 27286 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mem.png
+alex@Aleksandrs-MacBook-Pro LR6 % git checkout report
+Switched to branch 'report'
+alex@Aleksandrs-MacBook-Pro LR6 % git add ./images 
+alex@Aleksandrs-MacBook-Pro LR6 % git add README.md 
+alex@Aleksandrs-MacBook-Pro LR6 % git commit -m "~~alpha~~ omega"
+[report efb9e6b] ~~alpha~~ omega
+ 11 files changed, 41 insertions(+)
+ create mode 100644 images/.DS_Store
+ create mode 100644 images/0.png
+ create mode 100644 images/1.png
+ create mode 100644 images/2.png
+ create mode 100644 images/3.png
+ create mode 100644 images/4.png
+ create mode 100644 images/5.png
+ create mode 100644 images/6.png
+ create mode 100644 images/7.png
+ create mode 100644 images/8.png
+alex@Aleksandrs-MacBook-Pro LR6 % git push https://github.com/SoCoolCot/LR6
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (14/14), 2.59 MiB | 3.69 MiB/s, done.
+Total 14 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SoCoolCot/LR6
+   52621d3..efb9e6b  report -> report
+alex@Aleksandrs-MacBook-Pro LR6 % git log --pretty=format:"%h - %an, %ar : %s"
+efb9e6b - 4116 Романцов А.А, 2 minutes ago : ~~alpha~~ omega
+52621d3 - 4116 Романцов А.А, 35 minutes ago : file created
+c781a3f - 4116 Романцов А.А, 47 minutes ago : merge conflict resolve
+0221506 - 4116 Романцов А.А, 66 minutes ago : test commit
+921f53b - Kurtyanik, 1 year, 11 months ago : Обновление информации
+0f9f50d - Kurtyanik, 1 year, 11 months ago : Заполнил файл
+c08a654 - Kurtyanik, 1 year, 11 months ago : Файл создан пустым
+3c6e913 - Kurtyanik, 1 year, 11 months ago : Initial commit
+alex@Aleksandrs-MacBook-Pro LR6 % git log --pretty=format:"%h - %an, %ar : %s" --graph
+* efb9e6b - 4116 Романцов А.А, 3 minutes ago : ~~alpha~~ omega
+* 52621d3 - 4116 Романцов А.А, 37 minutes ago : file created
+*   c781a3f - 4116 Романцов А.А, 49 minutes ago : merge conflict resolve
+|\  
+| * 0f9f50d - Kurtyanik, 1 year, 11 months ago : Заполнил файл
+* | 0221506 - 4116 Романцов А.А, 67 minutes ago : test commit
+* | 921f53b - Kurtyanik, 1 year, 11 months ago : Обновление информации
+|/  
+* c08a654 - Kurtyanik, 1 year, 11 months ago : Файл создан пустым
+* 3c6e913 - Kurtyanik, 1 year, 11 months ago : Initial commit
+alex@Aleksandrs-MacBook-Pro LR6 % 
